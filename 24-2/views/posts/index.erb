@@ -2,7 +2,7 @@
     <h1>Welcome to the homepage!</h1>
 
     <% @post.each do |posts| %>
-    <div>
+    <div class="bookinfo">
       <h2><a href="<%= posts.id %>"><%= posts.title %></a></h2>
       <p>Description: <%= posts.body %></p>
       <h3> Author: <%= posts.author %></h3>
