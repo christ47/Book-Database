@@ -1,0 +1,24 @@
+<form class="" action="/<%=@post.id%>" method="post">
+  <div class="">
+    <label>Title:</label>
+    <input type="text" name="title" placeholder="Enter title" value="<%=@post.title%>">
+  </div>
+  <div class="">
+    <label>Body:</label>
+    <textarea name="body" rows="8" cols="80" placeholder="Enter the body of the post"><%=@post.body%></textarea>
+  </div>
+  <div>
+    <label>Author:</label>
+    <input type="text" name="author" placeholder="Enter Author" value="<%=@post.author%>">
+    </div>
+  <div class="">
+    <% if (@post.id != nil) %>
+    <input type="hidden" name="_method" value="put">
+    <% end %>
+    <input type="submit" value="Save post">
+
+    <%# <input type="hidden" name="_method" value="delete">
+
+    <input type="submit" value="delete"> %>
+  </div>
+</form>
