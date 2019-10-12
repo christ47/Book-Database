@@ -1,0 +1,16 @@
+nav{
+background-color: yellow;
+text-align: center;
+
+font-size: 25px;
+font-weight: bold;
+}
+
+.bookinfo{
+border: solid black 2px;
+border-radius: 25px;
+background-color: lightblue;
+}
+h1{
+  text-align: center;
+}
